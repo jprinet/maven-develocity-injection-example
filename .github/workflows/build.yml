@@ -31,8 +31,8 @@ jobs:
     - name: Inject Develocity
       run: |
         mkdir -p .mvn
-        cp -n .github/resources/extensions.xml .mvn/extensions.xml
-        cp -n .github/resources/develocity.xml .mvn/develocity.xml
+        cp -n .github/resources/.mvn/extensions.xml .mvn/extensions.xml
+        cp -n .github/resources/.mvn/develocity.xml .mvn/develocity.xml
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
