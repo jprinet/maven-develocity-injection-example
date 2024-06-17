@@ -36,7 +36,7 @@ jobs:
         cp -n .github/resources/.mvn/develocity.xml .mvn/develocity.xml
 
     - name: Setup Maven
-      uses: gradle/develocity-actions/maven-setup@v1
+      uses: gradle/develocity-actions/maven-setup@ff50eedf5eedbbcb8f1f7308c80b5dea9e0f7ca5
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
